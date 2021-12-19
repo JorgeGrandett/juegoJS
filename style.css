@@ -1,0 +1,46 @@
+html {
+    font-family: serif;
+    background-color: #ebf3f3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5ex;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4ex;
+}
+
+h3 {
+    font-size: 3.5ex;
+}
+
+.numh3 {
+    font-style: italic;
+    font-size: 5ex;
+}
+
+input {
+    font-size: 2.5ex;
+    border:1px solid black;
+    font-style: normal;
+    padding: 4px;
+    background-color: #f1e7f5;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.boton {
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #ca38ee;
+    color: white;
+}
+
+.entrada {
+    width: 19ex;
+}

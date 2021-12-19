@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>ADIVINA EL NUMERO</title>
 </head>
 <body>
@@ -12,15 +13,15 @@
         <br>
         <h2 id="mensajeFinal">Preciona reiniciar para iniciar el juego</h2>
         <h3>El numero escondido es:</h3>
-        <h2 id="numh3"></h2>
-        <input type="number" id="entrada" placeholder="Ingrese un numero" min="1" max="100" disabled>
-        <input type="button" value="Intentar" id="intentar" disabled onclick="evaluar()">
+        <h2 id="numh3" class="numh3"></h2>
+        <input type="number" id="entrada" placeholder="Ingrese un numero" min="1" max="100" class="entrada" disabled>
+        <input type="button" value="Intentar" id="intentar" class="boton" disabled onclick="evaluar()">
         <h3 id="ayuda"></h3>
         <br>
         <table id="tabla" border="1">
         </table>
         <br>
-        <input type="button" value="Reiniciar" onclick="reiniciar()">
+        <input type="button" value="Reiniciar" class="boton" onclick="reiniciar()">
     </main>
     <script src="function.js"></script>
 </body>
