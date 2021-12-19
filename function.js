@@ -9,9 +9,10 @@ function iniciar () {
 
 function evaluar () {
     let num = document.getElementById("entrada").value;
+    array[cantidad] = num;
     cantidad++;
     console.log(cantidad);
-    array[cantidad] = num;
+    
 
     if(cantidad<10){
         if (num<incognito){
@@ -24,6 +25,8 @@ function evaluar () {
             document.getElementById("ayuda").innerHTML = "Has adivinado el numero"; 
             document.getElementById("mensajeFinal").innerHTML = "Has Ganado"; 
             document.getElementById("numh3").innerHTML = incognito;
+            document.getElementById('entrada').disabled = true;
+            document.getElementById('intentar').disabled = true;
         }
     }
     else {
@@ -33,6 +36,12 @@ function evaluar () {
         document.getElementById("numh3").innerHTML = incognito;
     }
     
+    var datostabla = "";
+    for(let i=0; i<cantidad; i++){
+        datostabla+="<tr><td>"+array[i]+"</td></tr>";
+    }
+    document.getElementById("tabla").innerHTML = "";
+    document.getElementById("tabla").innerHTML = datostabla;
 }
 
 function reiniciar () {
@@ -43,4 +52,5 @@ function reiniciar () {
     cantidad = 0;
     document.getElementById("numh3").innerHTML = "";
     document.getElementById("ayuda").innerHTML = "";
+    document.getElementById("tabla").innerHTML = "";
 }

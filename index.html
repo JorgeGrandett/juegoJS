@@ -8,26 +8,16 @@
 </head>
 <body>
     <main>
-        <h1>Adivina el Número</h1>
+        <h1>Adivina el Número entre 1 y 100</h1>
         <br>
-        <h2 id="mensajeFinal">Mensaje Final</h2>
+        <h2 id="mensajeFinal">Juego en Curso</h2>
         <h3>El numero escondido es:</h3>
-        <h2 id="numh3">aca va al numero</h2>
+        <h2 id="numh3"></h2>
         <input type="number" id="entrada" placeholder="Ingrese un numero" min="1" max="100" disabled>
         <input type="button" value="Intentar" id="intentar" disabled onclick="evaluar()">
-        <h3 id="ayuda">Texto de ayuda</h3>
+        <h3 id="ayuda"></h3>
         <br>
-        <table>
-            <tr><td>a</td></tr>
-            <tr><td>b</td></tr>
-            <tr><td>c</td></tr>
-            <tr><td>d</td></tr>
-            <tr><td>e</td></tr>
-            <tr><td>f</td></tr>
-            <tr><td>g</td></tr>
-            <tr><td>h</td></tr>
-            <tr><td>i</td></tr>
-            <tr><td>j</td></tr>
+        <table id="tabla">
         </table>
         <br>
         <input type="button" value="Reiniciar" onclick="reiniciar()">
