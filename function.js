@@ -38,7 +38,7 @@ function evaluar () {
     
     var datostabla = "";
     for(let i=0; i<cantidad; i++){
-        datostabla+="<tr><td>"+array[i]+"</td></tr>";
+        datostabla+="<tr><td>Intento #"+(i+1)+"    </td><td>"+array[i]+"</td></tr>";
     }
     document.getElementById("tabla").innerHTML = "";
     document.getElementById("tabla").innerHTML = datostabla;
