@@ -2,6 +2,7 @@ html {
     font-family: serif;
     background-color: #ebf3f3;
     text-align: center;
+    height: 900px;
 }
 
 h1 {
@@ -27,7 +28,7 @@ input {
     border:1px solid black;
     font-style: normal;
     padding: 4px;
-    background-color: #f1e7f5;
+    background-color: #f1ebf3;
     border-radius: 4px;
     margin: 5px;
 }
@@ -37,10 +38,20 @@ input {
 }
 
 .boton:hover {
-    background-color: #ca38ee;
+    background-color: #653fee;
     color: white;
 }
 
 .entrada {
     width: 19ex;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 2.5ex;
+}
+
+td {
+    padding: 5px;
 }

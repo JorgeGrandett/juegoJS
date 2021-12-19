@@ -23,7 +23,7 @@ function evaluar () {
         }
         else if (num=incognito){   
             document.getElementById("ayuda").innerHTML = "Has adivinado el numero"; 
-            document.getElementById("mensajeFinal").innerHTML = "Has Ganado"; 
+            document.getElementById("mensajeFinal").innerHTML = "¡¡Has Ganado!!"; 
             document.getElementById("numh3").innerHTML = incognito;
             document.getElementById('entrada').disabled = true;
             document.getElementById('intentar').disabled = true;
