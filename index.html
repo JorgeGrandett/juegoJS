@@ -12,9 +12,9 @@
         <br>
         <h2 id="mensajeFinal">Mensaje Final</h2>
         <h3>El numero escondido es:</h3>
-        <h2 id="numh3">aca voy</h2>
-        <input type="number" id="entrada" placeholder="Ingrese un numero" min="1" max="100">
-        <input type="button" value="Intentar">
+        <h2 id="numh3">aca va al numero</h2>
+        <input type="number" id="entrada" placeholder="Ingrese un numero" min="1" max="100" disabled>
+        <input type="button" value="Intentar" id="intentar" disabled onclick="evaluar()">
         <h3 id="ayuda">Texto de ayuda</h3>
         <br>
         <table>
@@ -30,7 +30,7 @@
             <tr><td>j</td></tr>
         </table>
         <br>
-        <input type="button" value="Reiniciar">
+        <input type="button" value="Reiniciar" onclick="reiniciar()">
     </main>
     <script src="function.js"></script>
 </body>
