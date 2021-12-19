@@ -53,4 +53,5 @@ function reiniciar () {
     document.getElementById("numh3").innerHTML = "";
     document.getElementById("ayuda").innerHTML = "";
     document.getElementById("tabla").innerHTML = "";
+    document.getElementById("mensajeFinal").innerHTML = "Juego en curso";
 }
